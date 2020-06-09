@@ -1,0 +1,7 @@
+importFrom("stats", "as.dist", "dist", "median", "pt")
+importFrom("utils", "write.csv")
+importFrom("msigdbr", "msigdbr_show_species", "msigdbr")
+export("best.dist.corr", "cat.dist", "dist.corr", "gsda", "prep.gsda", "prep.msigdb", "surv.dist", "U.center", "uc.dist", "write.gsda.csv.file")
+S3method(print, bdc)
+S3method(print, gsda.result)
+S3method(print, dcor)
