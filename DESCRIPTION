@@ -1,6 +1,6 @@
 Package: GSDA
 Type: Package
-Title: Gene Set Distance Association test for categorical, quantitative, and censored event-time variables
+Title: Gene Set Distance Analysis (GSDA) for categorical, quantitative, and censored event-time variables
 Version: 1.0
 Date: 2020-06-07
 Author: Xueyuan Cao <xcao12@uthsc.edu> and Stanley.pounds <stanley.pounds@stjude.org>
@@ -9,4 +9,6 @@ Description: This package impletements the gene-set distance analysis of omic da
 Depends: R (>= 3.5.0),msigdbr 
 License: GPL (>= 2)
 biocViews: Microarray, Bioinformatics, Gene expression
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
 LazyLoad: yes
