@@ -1,0 +1,82 @@
+---
+title: "An Introduction to the GSDA Package"
+author: "xueyuan cao, PhD, Stan Pounds, PhD"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{An Introduction to the GSDA Package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r loadLibs, include = FALSE}
+library(MASS)
+library(GSDA)
+library(ggplot2)
+library(knitr)
+data(target.aml.clin)
+data(target.aml.expr)
+data(kegg.ml.gsets)
+opts_chunk$set(
+  comment = "#>",
+  collapse = TRUE,
+  digits = 3,
+  tidy = FALSE,
+  background = "#FFFF00",
+  fig.align = 'center',
+  warning = FALSE,
+  message = FALSE
+  )
+options(width = 55, digits = 3)
+theme_set(theme_bw())
+getInfo <- function(what = "Suggests") {
+  text <- packageDescription("GSDA")[what][[1]]
+  text <- gsub("\n", ", ", text, fixed = TRUE)
+  text <- gsub(">=", "$\\\\ge$", text, fixed = TRUE)
+  eachPkg <- strsplit(text, ", ", fixed = TRUE)[[1]]
+  eachPkg <- gsub(",", "", eachPkg, fixed = TRUE)
+  #out <- paste("\\\**", eachPkg[order(tolower(eachPkg))], "}", sep = "")
+  #paste(out, collapse = ", ")
+  length(eachPkg)
+}
+```
+
+
+The **GSDA** package (short for Gene-set Distance Analysis) contains functions to to carry out the gene-set distance analysis (GSDA) by generalizing distance correlations to evaluate the association of a gene set with categorical, quantitative, and censored event-time variables. **GSDA** loads packages as needed and assumes that they are installed. 
+
+
+
+An example to run GSDA on target aml RNAseq with Chloroma status (categorical) with myeloid gene sets defined by kegg.
+```{r Chloroma}
+chl.res=gsda(sqrt(target.aml.expr),
+             target.aml.clin,
+             kegg.ml.gsets,
+             "Chloroma","oe","ct")
+chl.res
+```
+
+An example to run GSDA on target aml RNAseq with White blood counts (quantitative) with myeloid gene sets defined by kegg.
+```{r logWBC}
+wbc.res=gsda(sqrt(target.aml.expr),
+             target.aml.clin,
+             kegg.ml.gsets,
+             "logWBC","oe","oe")
+wbc.res
+
+```
+
+An example to run GSDA on target aml RNAseq with event free survival (efs, censored event-time) with myeloid gene sets defined by kegg.
+```{r efs}
+efs.res=gsda(sqrt(target.aml.expr),
+             target.aml.clin,
+             kegg.ml.gsets,
+             c("efs.time","efs.evnt"),"oe","st")
+efs.res
+
+```
+
+Install **GSDA** using
+
+```{r install, eval = FALSE}
+devtools::install_github('xueyuancao/GSDA', dependencies = c("Depends", "Suggests"))
+```
