@@ -26,7 +26,7 @@ Cao X and Pounds S (2020)  Gene-Set Distance Associations (GSDA): A Powerful Too
 \author{
 Xueyuan Cao <xcao12@uthsc.edu> and Stanley.pounds <stanley.pounds@stjude.org>
 }
-\seealso{\code{\link{surv.dist }}}
+\seealso{\code{\link{surv.dist}}}
 \examples{
 data(target.aml.clin)
 cd=cat.dist(target.aml.clin$Chloroma)
