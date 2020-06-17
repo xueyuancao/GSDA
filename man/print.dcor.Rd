@@ -5,7 +5,7 @@
 Print Method for Distance Correlation
 }
 \description{
-Print the summary of result of distance correlation.
+Print the summary of result of distance correlation (dist.corr function).
 }
 \usage{
 \method{print}{dcor}(dcor.result)
@@ -19,11 +19,9 @@ Print the summary of result of distance correlation.
 Print the summary of result of distance correlation to stdout.
 }
 \references{
-Cao X, Sahr N and Pounds S (2020)  Gene-Set Distance Associations (GSDA): A Powerful Tool for Gene-Set Association Analysis.
+Cao X and Pounds S (2020)  Gene-Set Distance Associations (GSDA): A Powerful Tool for Gene-Set Association Analysis.
 }
 \author{
-Xueyuan Cao <xcao12@uthsc.edu> and Stanley.pounds <stanley.pounds@stjude.org>
+Xueyuan Cao <xcao12@uthsc.edu> and Stanley Pounds <stanley.pounds@stjude.org>
 }
-\seealso{
-print.bdc print.gsda.result
-}
+\seealso{\code{\link{print.bdc}}, \code{\link{print.gsda.result}}}

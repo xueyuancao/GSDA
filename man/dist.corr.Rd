@@ -5,20 +5,20 @@
 Distance Correlattion
 }
 \description{
-The function calculates the distance correlation between gene set of omic data with a clinical variable  
+Calculate the distance correlation for a gene set's omic data matrix with another variable.
 }
 \usage{
 dist.corr(X, Y, x.dist = "me", y.dist = "me")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{X}{The omic numeric data matrix. Each row is a features. Each column is a subject.}
-  \item{Y}{Numeric data matrix, vector, or data.frame.}
+  \item{X}{The omic numeric data matrix with subjects as rows and variables as columns.  Note this is the TRANSPOSE of how some omic data analysis packages represent omic data and how the omic data is represented in the gsda function of this package.}
+  \item{Y}{Numeric data matrix, vector, or data.frame.  The rows of X and rows of Y must represent the same set of subjects in the same order.}
   \item{x.dist}{The distance metric for omic data (X), may be "oe" (overall Euclidean), "me" (marginal Euclidean), "om" (overall Manhattan), or "mm" (marginal Manhattan).}
   \item{y.dist}{The distance metric for clinical data, may be "oe" (overall Euclidean), "me" (marginal Euclidean), "om" (overall Manhattan), or "mm" (marginal Manhattan), same options as for X}
 }
 \details{
-The function calculates distance matrix for X and Y using one of the foue methods "oe" (overall Euclidean), "me" (marginal Euclidean), "om" (overall Manhattan), or "mm" (marginal Manhattan). Then the distance matrices are centered by U-centering and distance correlation is calculated as the inner product of the two U-centered distance matrices over the squared of inner product of each of the two U-centered distance matrices. The distance correlation t-statistics follows a t-distribution with n*(n-3)/2 degree of freedom according to Zhu et al.(2020).
+The function calculates distance matrix for X and Y using one of the four methods "oe" (overall Euclidean), "me" (marginal Euclidean), "om" (overall Manhattan), or "mm" (marginal Manhattan). Then, the distance matrices are centered by U-centering and distance correlation is calculated as the inner product of the two U-centered distance matrices over the squared of inner product of each of the two U-centered distance matrices. The distance correlation t-statistics follows a t-distribution with n*(n-3)/2 degree of freedom according to Zhu et al.(2020).
 }
 \value{
 A list with the following components:
@@ -34,15 +34,13 @@ A list with the following components:
 \item{y.dist}{echo input distance metric for Y}
 }
 \references{
-Cao X, Sahr N and Pounds S (2020)  Gene-Set Distance Associations (GSDA): A Powerful Tool for Gene-Set Association Analysis.
+Cao X and Pounds S (2020)  Gene-Set Distance Associations (GSDA): A Powerful Tool for Gene-Set Association Analysis.
 Zhu C, Yao S, Zhang X and Shao X (2020) Distance-based and RKHS-based Dependence Metrics in High Dimension. arXiv:1902.03291
 }
 \author{
-Xueyuan Cao <xcao12@uthsc.edu> and Stanley.pounds <stanley.pounds@stjude.org>
+Xueyuan Cao <xcao12@uthsc.edu> and Stanley Pounds <stanley.pounds@stjude.org>
 }
-\seealso{
-best.dist.corr
-}
+\seealso{\code{\link{best.dist.corr}}}
 \examples{
 data(target.aml.clin)
 data(target.aml.expr)

@@ -5,7 +5,7 @@
 Print Method for Best Distance Correlation
 }
 \description{
-Print the result of best distance correlation
+Print the result of the best distance correlation (best.dist.corr)
 }
 \usage{
 \method{print}{bdc}(bdc.result,...)
@@ -20,11 +20,9 @@ Print the result of best distance correlation
 Print the summary of result of best distance correlation to stdout.
 }
 \references{
-Cao X, Sahr N and Pounds S (2020)  Gene-Set Distance Associations (GSDA): A Powerful Tool for Gene-Set Association Analysis.
+Cao X and Pounds S (2020)  Gene-Set Distance Associations (GSDA): A Powerful Tool for Gene-Set Association Analysis.
 }
 \author{
-Xueyuan Cao <xcao12@uthsc.edu> and Stanley.pounds <stanley.pounds@stjude.org>
+Xueyuan Cao <xcao12@uthsc.edu> and Stanley Pounds <stanley.pounds@stjude.org>
 }
-\seealso{
-print.dcor print.gsda.result
-}
+\seealso{\code{\link{print.dcor}}, \code{\link{print.gsda.result}}}

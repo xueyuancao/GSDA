@@ -18,5 +18,5 @@ write.gsda.csv.file(gsda.result, out.file)
 A saved .csv file.
 }
 \author{
-Xueyuan Cao <xcao12@uthsc.edu> and Stanley.pounds <stanley.pounds@stjude.org>
+Xueyuan Cao <xcao12@uthsc.edu> and Stanley Pounds <stanley.pounds@stjude.org>
 }

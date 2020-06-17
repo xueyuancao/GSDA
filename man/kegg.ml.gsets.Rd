@@ -9,7 +9,7 @@ A data set with the list of ensemble gene identifiers for the acute myeloid leuk
 }
 \usage{data("kegg.ml.gsets")}
 \format{
-  A data frame with 128 observations on the following 2 variables.
+  A data frame with 128 rows describing the pairings between the following 2 variables.
   \describe{
     \item{\code{vset}}{KEGG pathway name}
     \item{\code{vID}}{Ensemble gene (ENSG) identifier}
@@ -18,8 +18,8 @@ A data set with the list of ensemble gene identifiers for the acute myeloid leuk
 \details{A dataset with assignments of ensemble gene identifiers (ENSG) to KEGG pathway names
 }
 \source{
-\url{http://software.broadinstitute.org/gsea/msigdb/cards/KEGG_CHRONIC_MYELOID_LEUKEMIA}
-\url{http://software.broadinstitute.org/gsea/msigdb/cards/KEGG_ACUTE_MYELOID_LEUKEMIA}
+\url{http://software.broadinstitute.org/gsea/msigdb/cards/KEGG_CHRONIC_MYELOID_LEUKEMIA} \cr \cr
+\url{http://software.broadinstitute.org/gsea/msigdb/cards/KEGG_ACUTE_MYELOID_LEUKEMIA} \cr \cr
 Merged with information from \url{ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/GENE_INFO/Mammalia/Homo_sapiens.gene_info.gz}
 to translate gene symbols to Ensemble gene (ENSG) identifiers
 }

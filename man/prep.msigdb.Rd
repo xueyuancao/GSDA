@@ -17,16 +17,16 @@ prep.msigdb(species = "Homo sapiens", vset = "gs_name", vID = "gene_symbol")
   \item{vID}{Name of MSigDB column to use as vID in gsda, default is "gene_symbol".}
 }
 \details{
-Take a species from MsigDB, extract gene set definiton and prepare a data frame with gene sets and genes.
+Take a species from MsigDB (https://www.gsea-msigdb.org/gsea/msigdb/index.jsp), extract gene set definiton and prepare a data frame with gene sets and genes to be used as vset.data in the gsda function.
 }
 \value{
 A two-column data.frame with the columns vset and vID
 }
 \references{
-Cao X, Sahr N and Pounds S (2020)  Gene-Set Distance Associations (GSDA): A Powerful Tool for Gene-Set Association Analysis.
+Cao X and Pounds S (2020)  Gene-Set Distance Associations (GSDA): A Powerful Tool for Gene-Set Association Analysis.
 }
 \author{
-Xueyuan Cao <xcao12@uthsc.edu> and Stanley.pounds <stanley.pounds@stjude.org>
+Xueyuan Cao <xcao12@uthsc.edu> and Stanley Pounds <stanley.pounds@stjude.org>
 }
 \examples{
 gsets=prep.msigdb()
