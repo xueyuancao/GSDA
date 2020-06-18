@@ -26,8 +26,7 @@ A square matrix with nrow and ncol equal to the nrow of stime.evnt.  Entry (i,j)
 Cao X and Pounds S (2020)  Gene-Set Distance Associations (GSDA): A Powerful Tool for Gene-Set Association Analysis. \cr \cr 
 Jung SH, Owzar K, and George SL (2005) A mutiple testing procedure to associate gene expression levels with survival. Statistics in Medicine 24: 3077-88.
 }
-\author{
-Xueyuan Cao <xcao12@uthsc.edu> and Stanley Pounds <stanley.pounds@stjude.org>
+\author{Xueyuan Cao \email{xcao12@uthsc.edu} and Stanley Pounds \email{stanley.pounds@stjude.org}
 }
 
 \seealso{\code{\link{cat.dist}}}

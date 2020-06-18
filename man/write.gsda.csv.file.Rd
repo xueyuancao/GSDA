@@ -17,6 +17,5 @@ write.gsda.csv.file(gsda.result, out.file)
 \value{
 A saved .csv file.
 }
-\author{
-Xueyuan Cao <xcao12@uthsc.edu> and Stanley Pounds <stanley.pounds@stjude.org>
+\author{Xueyuan Cao \email{xcao12@uthsc.edu} and Stanley Pounds \email{stanley.pounds@stjude.org}
 }
