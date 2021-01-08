@@ -3,7 +3,7 @@ function(species="Homo sapiens", # Name of species in MSigDB
                      vset="gs_name",         # Name of MSigDB column to use as vset in gsda
                      vID="gene_symbol")      # Name of MSigDB column to use as vID in gsda
 {
-  species.list=msigdbr_show_species()             
+  species.list=msigdbr_species()$species_name             
   if (!is.element(tolower(species),
                   tolower(species.list)))
   {
