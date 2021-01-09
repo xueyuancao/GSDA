@@ -15,7 +15,7 @@ A matrix of RNA-seq gene expression values for 123 pediatric AML patients from t
 A RNA-seq dataset with expression levels in 94 ensemble gene identifiers for 123 pediatric AML patients
 }
 \source{
-\url{ftp://caftpd.nci.nih.gov/pub/OCG-DCC/TARGET/AML/mRNA-seq/L3/expression/}
+\url{https://target-data.nci.nih.gov/Public/AML/mRNA-seq/L3/expression/}
 }
 \examples{
 data(target.aml.expr)

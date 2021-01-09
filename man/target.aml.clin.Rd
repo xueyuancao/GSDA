@@ -17,7 +17,8 @@
 \details{A dataset with clinical data for each of 123 pediatric AML patients
 }
 \source{
-obtained from \url{ftp://caftpd.nci.nih.gov/pub/OCG-DCC/TARGET/AML/clinical/harmonized/}
+obtained from \url{
+https://target-data.nci.nih.gov/Public/AML/clinical/harmonized/}
 }
 \examples{
 data(target.aml.clin)
