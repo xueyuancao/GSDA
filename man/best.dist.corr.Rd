@@ -31,12 +31,14 @@ Cao X and Pounds S (2020)  Gene-Set Distance Associations (GSDA): A Powerful Too
 }
 \seealso{\code{\link{dist.corr}}}
 \examples{
-data(target.aml.clin)
-data(target.aml.expr)
-target.aml.expr=sqrt(target.aml.expr)
-target.aml.expr=t(target.aml.expr)
 
-bdc.chl=best.dist.corr(target.aml.expr,
-                       target.aml.clin$Chloroma,
-                       "oe","ct")
+#############No run example########
+#data(target.aml.clin)
+#data(target.aml.expr)
+#target.aml.expr=sqrt(target.aml.expr)
+#target.aml.expr=t(target.aml.expr)
+
+#bdc.chl=best.dist.corr(target.aml.expr,
+#                       target.aml.clin$Chloroma,
+#                       "oe","ct")
 }

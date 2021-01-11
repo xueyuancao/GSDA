@@ -8,12 +8,12 @@ Print Method for Best Distance Correlation
 Print the result of the best distance correlation (best.dist.corr)
 }
 \usage{
-\method{print}{bdc}(bdc.result,...)
+\method{print}{bdc}(x,...)
 %print.bdc(bdc.result)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{bdc.result}{a class of bdc}
+  \item{x}{a class of bdc}
   \item{...}{further arguments passed to or from other methods}
 }
 \value{

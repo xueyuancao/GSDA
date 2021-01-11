@@ -8,12 +8,13 @@ Print Method for Distance Correlation
 Print the summary of result of distance correlation (dist.corr function).
 }
 \usage{
-\method{print}{dcor}(dcor.result)
+\method{print}{dcor}(x,...)
 %print.dcor(dcor.result)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{dcor.result}{result of dist.corr}
+  \item{x}{result of dist.corr, class dcor}
+  \item{...}{further arguments passed to or from other methods}
 }
 \details{
 Print the summary of result of distance correlation to stdout.

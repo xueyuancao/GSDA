@@ -1,47 +1,48 @@
 print.dcor <-
-function(dcor.result) # result of dist.corr
+function(x, ...) # result of dist.corr
 {
   cat("--------- Distance Correlation Result -------------\n")
   
-  cat(paste("Distance Metric for X:",dist.metric.name(dcor.result$x.dist), "\n"))
+  cat(paste("Distance Metric for X:",dist.metric.name(x$x.dist), "\n"))
   
-  if (is.element(dcor.result$x.dist,c("oe","me","om","mm")))
+  if (is.element(x$x.dist,c("oe","me","om","mm")))
   {
-    if (is.vector(dcor.result$X))
-      dcor.result$X=matrix(dcor.result$X,ncol=1)
-    cat(paste("  Dimension of X: ",nrow(dcor.result$X),
-                ",",ncol(dcor.result$X), "\n"))    
+    if (is.vector(x$X))
+      x$X=matrix(x$X,ncol=1)
+    cat(paste("  Dimension of X: ",nrow(x$X),
+                ",",ncol(x$X), "\n"))    
   }
 
   
-  if (dcor.result$x.dist=="ct")
-    cat(paste("  Number of X observations:",length(dcor.result$X),
-                "; Number of X categories:",length(unique(dcor.result$X)), "\n"))
+  if (x$x.dist=="ct")
+    cat(paste("  Number of X observations:",length(x$X),
+                "; Number of X categories:",length(unique(x$X)), "\n"))
   
-  if (dcor.result$x.dist=="st")
-    cat(paste("  Number of X observations:",nrow(dcor.result$X),
-                "; Number of X events: ",sum(dcor.result$X[,2]>0), "\n"))
+  if (x$x.dist=="st")
+    cat(paste("  Number of X observations:",nrow(x$X),
+                "; Number of X events: ",sum(x$X[,2]>0), "\n"))
   
-  cat(paste("Distance Metric for Y:",dist.metric.name(dcor.result$y.dist), "\n"))
+  cat(paste("Distance Metric for Y:",dist.metric.name(x$y.dist), "\n"))
   
-  if (is.element(dcor.result$y.dist,c("oe","me","om","mm")))
+  if (is.element(x$y.dist,c("oe","me","om","mm")))
   {
-    if (is.vector(dcor.result$Y))
-      dcor.result$Y=matrix(dcor.result$Y,ncol=1)
-    cat(paste("  Dimension of Y: ",nrow(dcor.result$Y),
-                ",",ncol(dcor.result$Y), "\n"))
+    if (is.vector(x$Y))
+      x$Y=matrix(x$Y,ncol=1)
+    cat(paste("  Dimension of Y: ",nrow(x$Y),
+                ",",ncol(x$Y), "\n"))
   }
     
   
-  if (dcor.result$y.dist=="ct")
-    cat(paste("  Number of Y observations:",length(dcor.result$Y),
-                "; Number of Y categories:",length(unique(dcor.result$Y)), "\n"))
+  if (x$y.dist=="ct")
+    cat(paste("  Number of Y observations:",length(x$Y),
+                "; Number of Y categories:",length(unique(x$Y)), "\n"))
   
-  if (dcor.result$y.dist=="st")
-    cat(paste("  Number of Y observations:",nrow(dcor.result$Y),
-                "; Number of Y events: ",sum(dcor.result$Y[,2]>0), "\n"))
+  if (x$y.dist=="st")
+    cat(paste("  Number of Y observations:",nrow(x$Y),
+                "; Number of Y events: ",sum(x$Y[,2]>0), "\n"))
 
-  cat(paste("Overall Distance Correlation:",dcor.result$odCor, "\n"))
-  cat(paste("Overall Distance Correlation t-statistic:",dcor.result$t.odCor, "\n"))
-  cat(paste("Overall Distance Correlation p-value:",dcor.result$p.odCor, "\n"))
+  cat(paste("Overall Distance Correlation:",x$odCor, "\n"))
+  cat(paste("Overall Distance Correlation t-statistic:",x$t.odCor, "\n"))
+  cat(paste("Overall Distance Correlation p-value:",x$p.odCor, "\n"))
+  #NextMethod("print")
 }

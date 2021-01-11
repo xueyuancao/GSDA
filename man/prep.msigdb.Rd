@@ -28,8 +28,9 @@ Cao X and Pounds S (2020)  Gene-Set Distance Associations (GSDA): A Powerful Too
 \author{Xueyuan Cao \email{xcao12@uthsc.edu} and Stanley Pounds \email{stanley.pounds@stjude.org}
 }
 \examples{
-gsets=prep.msigdb()
-head(gsets)
+#####No run example####
+#gsets=prep.msigdb()
+#head(gsets)
 }
 \keyword{Gene}
 \keyword{Set}
