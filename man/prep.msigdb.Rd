@@ -23,14 +23,15 @@ Take a species from MsigDB (https://www.gsea-msigdb.org/gsea/msigdb/index.jsp), 
 A two-column data.frame with the columns vset and vID
 }
 \references{
-Cao X and Pounds S (2020)  Gene-Set Distance Associations (GSDA): A Powerful Tool for Gene-Set Association Analysis.
+Cao X and Pounds S (2021)  Gene-Set Distance Associations (GSDA): A Powerful Tool for Gene-Set Association Analysis.
 }
 \author{Xueyuan Cao \email{xcao12@uthsc.edu} and Stanley Pounds \email{stanley.pounds@stjude.org}
 }
 \examples{
-#####No run example####
-#gsets=prep.msigdb()
-#head(gsets)
+\donttest{
+gsets=prep.msigdb()
+head(gsets)
+}
 }
 \keyword{Gene}
 \keyword{Set}

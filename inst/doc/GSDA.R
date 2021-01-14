@@ -3,6 +3,7 @@
 library(GSDA)
 #library(ggplot2)
 library(knitr)
+old<- options()
 data(target.aml.clin)
 data(target.aml.expr)
 data(kegg.ml.gsets)
@@ -50,6 +51,7 @@ efs.res=gsda(sqrt(target.aml.expr),
              kegg.ml.gsets,
              c("efs.time","efs.evnt"),"oe","st")
 efs.res
+options(old)
 
 
 ## ----install, eval = FALSE---------------------------

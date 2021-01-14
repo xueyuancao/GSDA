@@ -21,7 +21,7 @@ A distance matrix is first calculated for a scale or data frame of a variable. T
 For distance methods "oe", "om", "ct", and "st", one matrix of overall distances computed using data from all variables.  For distance methods "me" and "mm", an array of distance matrices, one distance matrix per variable.
 }
 \references{
-Cao X and Pounds S (2020)  Gene-Set Distance Associations (GSDA): A Powerful Tool for Gene-Set Association Analysis.
+Cao X and Pounds S (2021)  Gene-Set Distance Associations (GSDA): A Powerful Tool for Gene-Set Association Analysis.
 
 Zhu C, Yao S, Zhang X and Shao X. Distance-based and RKHS-based Dependence Metrics in High Dimension. arXiv:1902.03291
 }

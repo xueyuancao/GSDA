@@ -25,20 +25,19 @@ A list with the following components:
 \item{Y}{echoes input Y}
 }
 \references{
-Cao X and Pounds S (2020)  Gene-Set Distance Associations (GSDA): A Powerful Tool for Gene-Set Association Analysis.
+Cao X and Pounds S (2021)  Gene-Set Distance Associations (GSDA): A Powerful Tool for Gene-Set Association Analysis.
 }
 \author{Xueyuan Cao \email{xcao12@uthsc.edu} and Stanley Pounds \email{stanley.pounds@stjude.org}
 }
 \seealso{\code{\link{dist.corr}}}
 \examples{
+\donttest{
+data(target.aml.clin)
+data(target.aml.expr)
+target.aml.expr=sqrt(target.aml.expr)
+target.aml.expr=t(target.aml.expr)
 
-#############No run example########
-#data(target.aml.clin)
-#data(target.aml.expr)
-#target.aml.expr=sqrt(target.aml.expr)
-#target.aml.expr=t(target.aml.expr)
-
-#bdc.chl=best.dist.corr(target.aml.expr,
-#                       target.aml.clin$Chloroma,
-#                       "oe","ct")
-}
+bdc.chl=best.dist.corr(target.aml.expr,
+                       target.aml.clin$Chloroma,
+                       "oe","ct")
+}}

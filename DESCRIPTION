@@ -1,10 +1,10 @@
 Package: GSDA
 Type: Package
-Title: Gene Set Distance Analysis (GSDA) for Categorical, Quantitative, and Censored Event-Time Variables
+Title: Gene Set Distance Analysis (GSDA)
 Version: 1.0
-Date: 2021-01-08
-Author: Xueyuan Cao <xcao12@uthsc.edu> and Stanley.pounds <stanley.pounds@stjude.org>
-Maintainer: Xueyuan Cao <xcao12@uthsc.edu>
+Date: 2021-01-014
+Authors@R: c(person("Xueyuan", "Cao", email = "xcao12@uthsc.edu", role = c("aut", "cre")),
+             person("Stanley", "Pounds", email = "stanley.pounds@stjude.org", role = c("aut"))) 
 Description: The gene-set distance analysis of omic data is implemented by generalizing distance correlations to evaluate the association of a gene set with categorical and censored event-time variables.
 Depends: R (>= 3.5.0),msigdbr 
 License: GPL (>= 2)

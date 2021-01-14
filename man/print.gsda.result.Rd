@@ -19,8 +19,9 @@ Print the of result of gene-set distance analysis (gsda function).
 \details{
 Print the result of gene-set distance analysis to stdout.
 }
+\value{No return value, called for side effects} 
 \references{
-Cao X and Pounds S (2020)  Gene-Set Distance Associations (GSDA): A Powerful Tool for Gene-Set Association Analysis.
+Cao X and Pounds S (2021)  Gene-Set Distance Associations (GSDA): A Powerful Tool for Gene-Set Association Analysis.
 }
 \author{Xueyuan Cao \email{xcao12@uthsc.edu} and Stanley Pounds \email{stanley.pounds@stjude.org}
 }

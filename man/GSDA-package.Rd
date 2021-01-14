@@ -20,7 +20,7 @@ The DESCRIPTION file:
 Maintainer: \packageMaintainer{GSDA}
 }
 \references{
-Cao X and Pounds S (2020)  Gene-Set Distance Associations (GSDA): A Powerful Tool for Gene-Set Association Analysis.
+Cao X and Pounds S (2021)  Gene-Set Distance Associations (GSDA): A Powerful Tool for Gene-Set Association Analysis.
 }
 \keyword{ package }
 \examples{
